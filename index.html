@@ -1,131 +1,93 @@
-<!DOCTYPE html>
+<!-- usando bootstrap p/ organizar a pagina-->
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grayscale - by Victor Yuzo</title>
-    <link rel="stylesheet" href="css\index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Exercícios Algorítimo</title>
 </head>
 
-<body class="body-container">
-    <header class="header-container">
-        <nav class="nav-container">
-            <span class="start">Start Bootstrap</span>
-            <div class="apc-container">
-                <span class="apc">About</span>
-                <span class="apc">Projects</span>
-                <span class="apc">Contact</span>
-            </div>
-        </nav>
-
-        <section class="header-section-container">
-            <H1 class="grayscale-title">GRAYSCALE</H1>
-            <h3 class="grayscale-subtitle">A free, responsive, one page Bootstrap theme</h3>
-            <h3 class="grayscale-subtitle">created by Start Bootstrap</h3>
-            </div>
-            <button class="header-button">GET STARTED </button>
-        </section>
-
-        <section class="pos-header">
-            <div class="pos-text">
-                <h1>Built with Bootstrap 4</h1>
-                <p>
-                    Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now,
-                    simply download the template on <span class="font-azul">the preview page</span>. The theme is open
-                    source, and you
-                    can use it for any purpose, personal or commercial.
-                </p>
-            </div>
-
-            <img class="ipad-container" src="./imagens/ipad.png" alt="fotinho do ipad">
-        </section>
-    </header>
-
-
-
-    <main class="main-container">
-        <div class="first-image">
-            <img src="./imagens/bg-masthead.jpg" alt="masthead">
-            <div class="vl"></div>
-            <aside>
-                <h1>Shoreline</h1>
-                <p>Grayscale is open source and MIT licensed. This means you can use it
-                    for any project - even commercial projects! Download it, customize it,
-                    and publish your website!
-                </p>
-            </aside>
+<body class="d-flex p-2 flex-lg-column justify-content-center align-items-center">
+    <form id="formEx1" style="width: 50%;margin:50px;" onsubmit="return false">
+        <h1> Exercício 1 - Sort</h1>
+        <small>Insira 4 números á serem ordenados</small>
+        <div class="form-group">
+            <input class="form-control" name="primeiroNum" placeholder="Primeiro número" value="0">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="segundoNum" placeholder="Segundo número" value="0">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="terceiroNum" placeholder="Terceiro número" value="0">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="quartoNum" placeholder="Quarto número" value="0">
         </div>
 
-        <div class="four-images">
-            <img class = "misty-img" src="./imagens/demo-image-01.jpg" alt="demo image 1">
-            <div class="misty-div">
-                <h1>Misty</h1>
-                <p>An example of where you can put an image of a project, or anything else, along with description</p>
-                <div class="v2 first"></div>
-            </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </br>
+    <div class="card text-white bg-secondary mb-3 d- " style="max-width: 18rem;">
+        <p id="solucaoEx1" class="card-text" style="padding:20px;margin:30px;"></p>
+    </div>
 
-            <div class="mont-div">
-                <h1>Mountains</h1>
-                <p>Another example of a project with its respective description.
-                    These sections work well responsively as well, try this theme
-                    on a small screen!
-                </p>
-                <div class="v2 second"></div>
-            </div>
-            <img class="mont-img" src="./imagens/bg-masthead.jpg" alt="demo image 2">
+    <hr style="border: 2px dashed gray;
+    border-radius: 5px;width:90%">
+
+    <!-- SEGUNDO FORM -->
+    <form id="formEx2" style="width: 50%;margin:50px" onsubmit="return false">
+        <h1> Exercício 2 - How many marias</h1>
+        <small>Insira um texto com 100 caracteres:</small>
+        <div class="form-group">
+            <input class="form-control" name="stringMaria">
         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </br>
+    <div class="card text-white bg-secondary mb-3 d- " style="max-width: 18rem;">
+        <p id="solucaoEx2" class="card-text" style="padding:20px;margin:30px;"></p>
+    </div>
 
-    </main>
+    <hr style="border: 2px dashed gray;
+border-radius: 5px;width:90%">
 
-    <footer class="footer-container">
-        <section class="subscribe-container">
-            <i class="far fa-paper-plane"></i>
-            <h1>
-                Subscribe to receive updates!
-            </h1>
-            <div class="input-button">
-                <input type="text" placeholder="ENTER EMAIL ADRESS...">
-                <div>SUBSCRIBE</div>
-            </div>
+    <!-- TERCEIRO FORM-->
+    <form id="formEx3" style="width: 50%;margin:50px" onsubmit="return false">
+        <h1> Exercício 3 - How many days since the beginning of the year</h1>
+        <small>Insira uma data</small>
+        <div class="form-group">
+            <input class="form-control" name="dataHoje" placeholder="dd/mm/yyyy">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </br>
+    <div class="card text-white bg-secondary mb-3 d- " style="max-width: 18rem;">
+        <p id="solucaoEx3" class="card-text" style="padding:20px;margin:30px;"></p>
+    </div>
 
-        </section>
+    <hr style="border: 2px dashed gray;
+border-radius: 5px;width:90%">
 
-        <section class="contact-section">
-            <div>
-                <i class="fas fa-map-marked-alt"></i>
-                <h4>ADDRESS</h4>
-                <div class="v2"></div>
-                <span>4923 Market Street, Orlando FL</span>
-            </div>
 
-            <div>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <h4>EMAIL</h4>
-                <div class="v2"></div>
-                <span class="email">hello@yourdomain.com</span>
-            </div>
 
-            <div>
-                <i class="fa fa-mobile" style="font-size:1.25rem" aria-hidden="true"></i>
-                <h4>PHONE</h4>
-                <div class="v2"></div>
-                <span>+1 (555) 902-8832</span>
-            </div>
-        </section>
-
-        <section class="social-media">
-                <div><i class="fab fa-twitter"></i></i></div>
-                <div><i class="fab fa-facebook-f"></i></div>
-                <div><i class="fab fa-github"></i></div>
-        </section>
-
-        <span class="copyright">Copyright © Your Website 2019</span>
-    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
